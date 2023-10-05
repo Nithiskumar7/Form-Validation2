@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: url(fromv.jpg);
+    width:100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    background-attachment: fixed;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+  header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .navbar .logo {
+    color: #fff;
+    font-weight: 600;
+    font-size: 2.1rem;
+    text-decoration: none;
+  }
+  .navbar .logo span {
+    color: #C06B3E;
+  }
+  .navbar .menu-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+  }
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.2s ease;
+  }
+  .navbar a:hover {
+    color: #41bb0d;
+  }
+  
+
+#form {
+    width: 400px;
+    margin: 15vh auto 0 auto;
+    background-color: rgba(2, 62, 2, 0.54);
+    border-radius: 5px;
+    padding: 25px;
+    margin-left: 570px;
+    box-shadow: rgba(244, 247, 248, 0.12) 0px 2px 4px 0px, rgba(223, 233, 237, 0.32) 0px 2px 16px 0px;
+}
+
+#form h1 {
+    text-align: center;
+    color: rgb(250, 253, 250);
+}
+
+#form button {
+    background-color: #256e06;
+    padding: 10px 35px;
+    border: 1px solid #42941f;
+    color: #151515;
+    border-radius:5px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: .8s ease;
+    cursor: pointer;
+    width:100%;
+}
+#form button:hover{
+    background-color: #41bb0d;
+    color: #fff;
+}
+
+.input-control {
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+label{
+    color:#fff;
+}
+.input-control input {
+    border-radius: 5px;
+    font-size: 15px;
+    margin-top: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    outline: 3px solid #256e06;
+}
+
+.input-control input:focus {
+    outline: 0;
+}
+
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    margin-top: -10px;
+    color: #ff3860;
+    font-size: 15px;
+}
+
